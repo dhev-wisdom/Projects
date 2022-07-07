@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#section-one {
+    background-color: rgb(34,34,34);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem 0;
+    margin-bottom: 3rem;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: end;
+    border-radius: 7px;
+}
+
+li {
+    float: left;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(243, 235, 235);
+    font-size: 0.85rem;
+}
+
+li a:hover {
+    filter: brightness(90%);
+}
+
+.github-pages {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    word-spacing: 0;
+    font-weight: 500;
+}
+
+.github-pages span {
+    font-weight: bold;
+}
+
+.main-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.custom-paragraph {
+    color: rgb(185, 178, 178);
+    margin-bottom: 3rem;
+    font-size: 110%;
+}
+
+.custom-paragraph a {
+    color: rgb(241, 235, 235)
+}
+
+.custom-paragraph a:hover {
+    text-decoration:none;
+}
+
+/* Section Two */
+
+#section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.github-pages-2 {
+    font-size: 3rem;
+    margin: 2.7rem 0 3rem;
+    font-weight: 500;
+    color: rgb(56, 50, 50);
+    line-height: 1.5;
+}
+
+.ready-to-start {
+    padding: 0 10rem;
+}
