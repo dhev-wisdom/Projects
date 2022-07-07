@@ -11,28 +11,8 @@ function showTime() {
   var period = "PM";
   var button1 = document.querySelectorAll("button")[0];
   var button2 = document.querySelectorAll("button")[1];
-  let format;
-
-
-  if (format == 12) {
-    hours = hours % 12;
-  } else {
-    hours = hours;
-  }
-
-  if (hours < 10) {
-    hours = "0" + hours;
-  }
-  if (minutes < 10) {
-    minutes = "0" + minutes;
-  }
-  if (seconds < 10) {
-    seconds = "0" + seconds;
-  }
-
-  let time = hours + ":" + minutes + ":" + seconds;
-
-  document.querySelector("h1").innerHTML = time;
+  var timer = document.querySelector(".timer");
+  let format = timer.getAttribute("data-format");;
 
 
   if (day == 0) {
@@ -64,18 +44,19 @@ function showTime() {
   format = button1.getAttribute("data-format");
   clockElm.setAttribute("data-format", format);
 
+  if (format == 12){
+    if (hours >= 12){
+      period = "PM";
+    } else {
+      period = "AM";
+    }
+  }
+
   document.querySelector("button").style.color = "#00FF97";
   document.querySelectorAll("button")[1].style.color = "#8A8A8A";
-
-  if (hours >= 12) {
-    period = "PM";
-  }
-  if (hours < 12) {
-    period = "AM";
-  }
-  
   document.querySelector("h4").innerHTML = " " + period;
 }
+
 
 button2.addEventListener("click", changeTo24Hr);
 
@@ -90,9 +71,37 @@ function changeTo24Hr() {
 
 }
 
+
+  if (format == 12) {
+    if (hours == 0){
+      hours = 12;
+    }
+    if (hours < 12){
+      hours = hours % 12;
+    }
+    if (hours == 12){
+      hours = 12;
+    }
+    if (hours > 12){
+      hours = hours % 12;
+    }
+  }
+  
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  
+  let time = hours + ":" + minutes + ":" + seconds;
+
+  document.querySelector("h1").innerHTML = time;
+
 }
 
 setInterval(showTime, 1000);
-
-
-
