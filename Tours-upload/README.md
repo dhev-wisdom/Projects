@@ -1,7 +1,7 @@
 TOURS
 
 This is a Tours app I made with react
-It's actually from a tutorial but I added more functionality
+It's actually from a tutorial but I added more functionality.
 
 I made this app just few days into learning react. I had only learnt the useState hook.
 So the app is basically html, css and useState.
@@ -14,4 +14,4 @@ And if you mistakenly removed the ones you like or you removed a tour but later 
 
 Feel free to contribute.
 
-# I deployed the app on netlify; so feel free to check 
+# I deployed the app on netlify; so feel free to check - react-tours-app01.netlify.app
