@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(236, 91, 115);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.box {
+  height: auto;
+  width: 25rem;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  margin: 3rem 0;
+  max-height: 70vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.box h1 {
+  color: rgb(236, 91, 115);
+}
+
+.total {
+  display: flex;
+  margin: 1rem;
+}
+
+.total img {
+  border-radius: 50%;
+  width: 4rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about h4 {
+  margin-bottom: 0;
+}
+
+.about p {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  background-color: rgba(256,256,256,1);
+  border: none;
+  padding: 0;
+  color:rgb(95, 9, 23);
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-left: auto;
+}
+
+.btn:hover {
+  color:rgb(236, 91, 115)
+}
+
+.grpBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clearAll {
+  border-radius: 10px;
+  padding: 0.7rem;
+  width: 45%;
+  background-color: rgb(236, 91, 115);
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  border: none;
+  font-size: large;
+}
+
+.undoClearAll {
+  border-radius: 10px;
+  padding: 0.7rem;
+  width: 45%;
+  background-color: rgb(236, 91, 115);
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  border: none;
+  font-size: large;
+}
+
+.undoClearAll:hover {
+  background-color: rgb(223, 66, 92);
+}
+
+.clearAll:hover {
+  background-color: rgb(223, 66, 92);
+}
+
+
+@media (max-width: 600px) {
+  .about {
+    display: block;
+  }
+
+  .box {
+    height: auto;
+    width: 90vw;
+    max-height: 85vh;
+    margin: auto;
+    padding: 1rem 0.7rem;
+  }
+
+  .grpBtn {
+    display: block;
+  }
+
+  .clearAll {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+  }
+  
+  .undoClearAll {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+  }
+
+  .total img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: auto;
+    margin-right: 0.7rem;
+  }
+
+  .box h1, h3 {
+    font-size: 90%;
+  }
+
+  .about h4, p {
+    font-size: 70%;
+  }
+  
+  
+  
+}

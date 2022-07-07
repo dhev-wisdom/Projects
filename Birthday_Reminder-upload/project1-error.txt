@@ -1,0 +1,186 @@
+Person.js component
+
+import React, { useState } from 'react';
+
+
+const Person = (props) => {
+    const [ text, setText ] = useState('Passed😞');
+
+    const changeText = () => {
+        setText('remove reminder');
+    }
+
+    const returnText = () => {
+        setText('Passed😞')
+    }
+
+    const remove = () => {
+        console.log(Person);
+    }
+
+    return (
+        <>
+            <div className='total'>
+                <img src={props.img} alt='' />
+                <div className='about'>
+                    <h5>{props.name}</h5>
+                    <p>{props.years} years</p>
+                </div>
+                <button className='btn' type='button' onClick={remove} onMouseOver={changeText} onMouseLeave={returnText}>
+                    {text}
+                </button>
+            </div>
+        </>
+    )
+}
+
+export default Person;
+
+
+
+
+index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+
+
+
+App.js
+
+import './App.css';
+import React, { useState } from 'react';
+import Person from './Person';
+import img1 from './person1.jpg';
+import img2 from './person2.jpg';
+import img3 from './person3.jpg';
+import img4 from './person4.jpg';
+import img5 from './person5.JPG';
+
+function App() {
+  const clearAll = () => {
+    
+  }
+  return (
+    <>
+      <div className='box'>
+        <h1>Birthday Reminder</h1>
+        <h3>5 birthdays today</h3>
+        <Person name='Bertie Yates' years={29} img={img1} id={1} />
+        <Person name='Henderson Howell' years={22} img={img2} id={2} />
+        <Person name='John Doe' years={23} img={img3} id={3} />
+        <Person name='Jennifer Wills' years={24} img={img4} id={4} />
+        <Person name='Eugene Reka' years={32} img={img5} id={5} />
+        <button onClick={clearAll} className='clearAll'>Clear All</button>
+      </div>
+    </>
+  );
+}
+
+export default App;
+
+
+
+
+index.css
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(236, 91, 115);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.box {
+  height: auto;
+  width: 25rem;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  margin: 3rem 0;
+  max-height: 70vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.box h1 {
+  color: rgb(236, 91, 115);
+}
+
+.total {
+  display: flex;
+  margin: 1rem;
+}
+
+.total img {
+  border-radius: 50%;
+  width: 4rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about h5 {
+  margin-bottom: 0;
+}
+
+.about p {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  background-color: rgba(256,256,256,1);
+  border: none;
+  padding: 0;
+  color:rgb(95, 9, 23);
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-left: auto;
+}
+
+.btn:hover {
+  color:rgb(236, 91, 115)
+}
+
+.clearAll {
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  background-color: rgb(236, 91, 115);
+  color: white;
+  font-weight: bold;
+  margin: 1rem auto;
+  border: none;
+  font-size: large;
+}
+
+.clearAll:hover {
+  background-color: rgb(223, 66, 92);
+}
+
+
