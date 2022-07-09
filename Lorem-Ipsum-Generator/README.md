@@ -8,7 +8,7 @@ Unlike the traditional lorem ipsum, this paragraph generator generates real sent
 
 It's actually a small app and i made use of only then useState hook and one component was enough to do the job.
 
-Check out the deployed app at: 
+#Check out the deployed app at: react-paragraph-generator.netlify.app
 
 Contributions are very much welcomed to this project
 
