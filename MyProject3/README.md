@@ -7,3 +7,5 @@ The clock displays the time and has a 12 and 24 hours button with which you can 
 The days of the week are also displayed above and the right day is highlighted.
 
 As at the time of this commit, I haven't media-queried the app to display well on mobile devices; so feel free to contribute that. Or, you might be late and I have added it already.
+
+#Check it out here: http://htmlpreview.github.io/?https://github.com/Whitzypro/My_Projects/main/MyProject3/newFile.html
