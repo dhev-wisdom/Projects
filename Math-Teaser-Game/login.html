@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <form name="login" class="math-calc-container">
+    <form action="game.html" name="login" class="math-calc-container">
         <h4 class="welcome">Welcome to <span>Number Teaser</span>😋</h4>
         <label for="difficulty" class="sizeOf">Select Difficulty: </label>
         <select class="btn" name="difficulty" id="difficulty">
@@ -16,9 +16,10 @@
             <option class="size" value="normal">Normal</option>
             <option class="size" value="hard">Hard</option>
         </select>
-        <button id="submit"><a href="game.html">Start Game</a></button>
+        <button type="submit" id="submit">Start Game</button>
     </form>
-        
+
+
     <script src="login.js"></script>
 </body>
 </html>
