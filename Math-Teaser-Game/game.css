@@ -32,6 +32,7 @@ body::before, body::after {
 .math-calc-container {
     width: 65vw;
     height: 75vh;
+    padding: 1rem;
     background-color: #fff;
     background-image: url('image/img4.jpg');
     background-repeat: no-repeat;
@@ -188,6 +189,10 @@ body::before, body::after {
     border-radius: 20px;
 }
 
+.ans {
+    text-align: center;
+}
+
 @media (max-width: 800px) {
     .math-calc-container {
         width: 80vw;
@@ -226,4 +231,5 @@ body::before, body::after {
     .size {
         font-size: .8rem;
     }
+    
 }
