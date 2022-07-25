@@ -20,6 +20,7 @@ showLevel.innerHTML = chosenLevel
 
 levelDisplay.innerHTML = `Difficulty: ${chosenLevel.toUpperCase()}`;
 
+function getRandom() {
     if (chosenLevel == 'easy') {
         randomNumber1 = Math.floor(Math.random() * 10);
         randomNumber2 = Math.floor(Math.random() * 10);
@@ -35,23 +36,41 @@ levelDisplay.innerHTML = `Difficulty: ${chosenLevel.toUpperCase()}`;
         randomNumber2 = Math.floor(Math.random() * 100);
         randomNumber3 = Math.floor(Math.random() * 100);
         display.innerHTML = randomNumber1 + ' + ' + randomNumber2 + ' + ' + randomNumber3;
+    }
 }
-
+    
+getRandom();
 function calculate(e){
     let sum = randomNumber1 + randomNumber2 + randomNumber3;
+    e.preventDefault();
     if (sum === parseFloat(ans.value)) {
         solution.textContent = "CORRECT👏👏👏";
         solution.classList.add("right");
         solution.classList.remove("wrong");
+        setTimeout(()=>{
+            getRandom();
+            solution.classList.remove("right");
+            ans.value = "";
+            ans.focus();
+        }, 2000);
     } else {
-        e.preventDefault();
         solution.textContent = "WRONG😪. TRY AGAIN";
         solution.classList.remove("right");
         solution.classList.add("wrong");
+        setTimeout(()=>{
+            ans.value = "";
+            ans.focus();
+        }, 1000);
     }
     console.log(ans.value);
     console.log(sum);
     console.log(solution);
 };
 
+function next(e) {
+    e.preventDefault();
+    getRandom();
+}
+
 btn.addEventListener('click', calculate);
+submitBtn.addEventListener('click', next);
