@@ -10,8 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('image/img4.jpg');
-    background-repeat: no-repeat;
+    background: url('image/img4.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -202,8 +201,8 @@ body::before, body::after {
 
 @media (max-width: 600px) {
     .math-calc-container {
-        width: 95vw;
-        height: 90vh;
+        width: 90vw;
+        height: 85vh;
         font-size: 2rem;
     }
         #submit {
@@ -231,5 +230,4 @@ body::before, body::after {
     .size {
         font-size: .8rem;
     }
-    
 }
