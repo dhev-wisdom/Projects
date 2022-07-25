@@ -1,1 +1,1 @@
-# number-game00.netlify.app
+# number-teaser.netlify.app
