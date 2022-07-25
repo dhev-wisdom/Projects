@@ -1,1 +1,1 @@
-#number-teaser.netlify.app
+#number-game00.netlify.app
