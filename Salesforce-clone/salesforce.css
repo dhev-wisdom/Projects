@@ -1558,8 +1558,8 @@ nav .nav-color {
         .footer {
             padding: 1rem 0.5rem;
         }
-        .footer-section .upper {
-            font-size: 80%;
+        .footer .big .upper p {
+            font-size: 75%;
         }
         
     }
