@@ -14,4 +14,6 @@ And if you mistakenly removed the ones you like or you removed a tour but later 
 
 Feel free to contribute.
 
-# I deployed the app on netlify; so feel free to check - react-tours-app01.netlify.app
+I deployed the app on netlify; so feel free to check - 
+
+# react-tours-app01.netlify.app
