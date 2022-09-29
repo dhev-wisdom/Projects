@@ -1,4 +1,4 @@
-TOURS
+# TOURS APP
 
 This is a Tours app I made with react
 It's actually from a tutorial but I added more functionality.
