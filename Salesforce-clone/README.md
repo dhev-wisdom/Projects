@@ -1,10 +1,6 @@
 Salesforce clone
 
-I decided to do something a little bit different
-
-I decided to build a full website
-
-I used HTML and CSS and very little bootstrap
+HTML and CSS and minimal bootstrap
 
 #Original site at: salesforce.com
 
