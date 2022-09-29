@@ -1,16 +1,38 @@
-Hello 😍
+# <>Hello 😊</>
 
-My name is Chinonso Wisdom, a frontend developer
+My name is Chinonso Wisdom, a software engineer and frontend developer.
 
 I build simple but amazing UI for the web
 
-Check out my projects to see the kind of the results I will deliver for you in real time.
+# Languages:
+  Major -
+  JavaScript, React.js, HTML, CSS
 
-Shoot me a message if you have a project you want me to work on, if you have a project we can collaborate on, if you got questions for me or simply want to say _hi_
+  Minor - 
+  PHP, C
+
+# Technologies:
+  Redux, SCSS, Bootstrap, Styled components, Firebase
+
+# Tools:
+  Visual Studio code, Chrome, Firefox, Powershell
+
+Check out my projects and tell me what you think about them.
+
+All critics, questions, suggestions, referrals and collabs are highly welcome.
+
+Shoot me a message if you have a project you want me (or us) to work on.
 
 I hope you enjoy it here
 
 
-#08105517862
-#Twitter: @nonso_wisdom100
-mail: @nonsowisdom62@gmail.com
+# Mobile:
+  08105517862
+# Twitter: 
+  https://twitter.com/nonso_wisdom100
+
+# Mail: 
+  Mailto:nonsowisdom62@gmail.com
+
+# WhatsApp:
+  https://wa.me/08105517862
