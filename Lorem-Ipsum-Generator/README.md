@@ -1,4 +1,4 @@
-Paragraph Generator
+# Paragraph Generator
 
 A small react app that lets you generate as much paragraphs as possible on the fly.
 
@@ -11,6 +11,6 @@ It's actually a small app and i made use of only then useState hook and one comp
 Check out the deployed app at: 
 # react-paragraph-generator.netlify.app
 
-Contributions are very much welcome to this project.
+Contributions are welcome
 
 Enjoy!
