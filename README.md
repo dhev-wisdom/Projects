@@ -29,7 +29,7 @@ I hope you enjoy it here
 # Mobile:
   08105517862
 # Twitter: 
-  https://twitter.com/nonso_wisdom100
+  https://twitter.com/wisdom_theDev
 
 # Mail: 
   Mailto:nonsowisdom62@gmail.com
