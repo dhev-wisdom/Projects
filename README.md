@@ -15,13 +15,9 @@ I build simple but amazing UI for the web
   Redux, SCSS, Bootstrap, Styled components, Firebase
 
 # Tools:
-  Visual Studio code, Chrome, Firefox, Powershell, Git, GitHub, Netlify 
+  Visual Studio code, Chrome, Firefox, GitBash, Git, GitHub, Netlify 
 
-Check out my projects and tell me what you think about them.
-
-All critics, questions, suggestions, referrals and collabs are highly welcome.
-
-Shoot me a message if you have a project you want me (or us) to work on.
+Send me a mail if you have a project you want me (/us) to work on.
 
 I hope you enjoy it here
 
